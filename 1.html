@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pakistan Spain Visa: Welcome to the Official Website Spain Visa Application Centre in Pakistan</title>
+
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="BLS Spain Visa">
+
+    <script>
+        function kendoError(e, status) {
+            if (e.xhr.status === 403) {
+                ShowLoader();
+                window.top.location.href = "/vas/account/login?se=true";
+            }
+        }
+
+        const storedTheme = localStorage.getItem('theme')
+
+        const getPreferredTheme = () => {
+            if (storedTheme) {
+                return storedTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        }
+
+        const setTheme = function (theme) {
+            if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.setAttribute('data-bs-theme', 'dark')
+            } else {
+                document.documentElement.setAttribute('data-bs-theme', theme)
+            }
+        }
+
+        setTheme(getPreferredTheme())
+
+        window.addEventListener('DOMContentLoaded', () => {
+            var el = document.querySelector('.theme-icon-active');
+            if (el != 'undefined' && el != null) {
+                const showActiveTheme = theme => {
+                    const activeThemeIcon = document.querySelector('.theme-icon-active use')
+                    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+                    const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+
+                    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                        element.classList.remove('active')
+                    })
+
+                    btnToActive.classList.add('active')
+                    activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+                }
+
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                    if (storedTheme !== 'light' || storedTheme !== 'dark') {
+                        setTheme(getPreferredTheme())
+                    }
+                })
+
+                showActiveTheme(getPreferredTheme())
+
+                document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', () => {
+                            const theme = toggle.getAttribute('data-bs-theme-value')
+                            localStorage.setItem('theme', theme)
+                            setTheme(theme)
+                            showActiveTheme(theme)
+                        })
+                    })
+
+            }
+        })
+
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/font-awesome/css/all.min.css?v=AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/bootstrap-icons/bootstrap-icons.css?v=4RctOgogjPAdwGbwq-rxfwAmSpZhWaafcZR9btzUk18">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/tiny-slider/tiny-slider.css?v=1CXVlacnwYLmg9X2AhCKvYcSgR53GWiU3z4qZJDrb68">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/glightbox/css/glightbox.css?v=yMoCTayb6wccTz561YN_R0qkP756JifYXnA40MUtR-k">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/flatpickr/css/flatpickr.min.css?v=RXPAyxHVyMLxb0TYCM2OW5R4GWkcDe02jdYgyZp41OU">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/choices/css/choices.min.css?v=IhTRSpOAAOl37YqrDOlNjxD6S4lzZ_n2WqKtc03i0mE">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css?v=YLGeXaapI0_5IgZopewRJcFXomhRMlYYjugPLSyNjTY">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css?v=de-9WIa9z8cZXAVKAywSh1vOyouay5jH6hy6oE4R0xc">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/color.css?v=biNDUrJj74VlRbGB7tvoVV8aOPeiVsRt7L_VDdhggXQ" />
+
+    <link rel="stylesheet" type="text/css" href="/css/site.css?v=ytyCErZowgoKUzh6tG9Kso3OoRjRIWjbSA02xhSECBY" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/kendo/css/kendo.common.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/kendo/css/kendo.silver.min.css">
+
+    <style>
+    </style>
+    <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/assets/vendor/jquery-ajax-unobtrusive/jquery-ajax-unobtrusive.js"></script>
+    <script src="/assets/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        $.ajaxSetup({
+            beforeSend: function (xhr, options) {
+                if (options.type.toUpperCase() == "POST") {
+                    xhr.setRequestHeader("RequestVerificationToken", $('input:hidden[name="__RequestVerificationToken"]').val());
+                }
+
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader-item">
+            <div class="spinner-grow text-primary"></div>
+        </div>
+    </div>
+    <div id="global-overlay" class="global-overlay">
+        <div class="global-overlay-loader">
+        </div>
+    </div>
+    <header class="navbar-light header-sticky">
+        <!-- Nav START -->
+        <nav class="navbar navbar-expand-xl z-index-9 navbar-divider">
+            <div class="container">
+                <!-- Logo START -->
+                <a class="navbar-brand" href="https://pak.blsspainvisa.com/">
+                </a>
+                <!-- Logo END -->
+                <!-- Responsive navbar toggler -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-search fs-4"> </i>
+                </button>
+
+                <!-- Responsive navbar toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2" aria-controls="navbarCollapse2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-animation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+                <!-- Main navbar START -->
+                <div class="navbar-collapse collapse" id="navbarCollapse">
+                    <div class="col-md-8">
+                        <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
+                            <div class="nav-item w-100">
+                                <div class="align-items-center position-relative">
+                                    <div class="align-items-center text-primary" style="font-size:30px;font-weight:700;">Apply for VISA to Spain In Pakistan</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="align-items-center position-relative">
+                            <small class="text-secondary mb-1">Follow us on</small>
+                            <ul class="list-inline mb-3 mt-0">
+                                <li class="list-inline-item"> <a class="btn btn-sm px-2 bg-facebook mb-0" href="https://www.facebook.com/blsinternationalservices/" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-facebook-f"></i></a> </li>
+                                <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="https://www.instagram.com/blsinternationalservicesltd/" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-instagram"></i></a> </li>
+                                <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0" href="https://twitter.com/blsintlservices" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-twitter"></i></a> </li>
+                                <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-linkedin mb-0" href="https://www.linkedin.com/company/bls-international-services-ltd/?originalSubdomain=in" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-linkedin-in"></i></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav flex-row align-items-center list-unstyled ms-xl-auto">
+                    <li class="dropdown nav-item">
+                        <a class="nav-link small pb-2" href="#" role="button" id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="w-30px me-2" src="/assets/images/flags/en-US.svg?v=fJixQ3m-y1-w-_afeOeFb-tMWZmyan2Kg_I1uHmCh5U" alt=""><small>English</small>
+                        </a>
+                        <ul class="dropdown-menu dropdown-animation dropdown-menu-end min-w-auto" aria-labelledby="languageDropdown">
+                                <li> <a class="dropdown-item me-4" href="javascript:OnLanguageChange('en-US');"><img class="fa-fw me-2" src="/assets/images/flags/en-US.svg?v=fJixQ3m-y1-w-_afeOeFb-tMWZmyan2Kg_I1uHmCh5U" alt="">English</a> </li>
+                                <li> <a class="dropdown-item me-4" href="javascript:OnLanguageChange('es-ES');"><img class="fa-fw me-2" src="/assets/images/flags/es-ES.svg?v=u8dwCYeevXz6PyEEPz-VQ3EimMI2no8ZqYGmV2By0O8" alt="">Espa&#xF1;o</a> </li>
+                                <li> <a class="dropdown-item me-4" href="javascript:OnLanguageChange('ar-SA');"><img class="fa-fw me-2" src="/assets/images/flags/ar-SA.svg" alt="">&#x639;&#x631;&#x628;&#x64A;</a> </li>
+                        </ul>
+                    </li>
+                        <li class="nav-item ms-3 dropdown">
+                            <!-- Avatar -->
+                            <a class="avatar avatar-sm p-0 mt-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img onerror="OnPhotoError(this);" class="avatar-img rounded-2" src="/assets/images/avatar/01.jpg" alt="Profile">
+                            </a>
+
+                            <!-- Profile dropdown START -->
+                            <ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3" aria-labelledby="profileDropdown">
+                                <!-- Profile info -->
+                                <li class="px-3 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <!-- Avatar -->
+                                        <div class="avatar me-3">
+                                                <img onerror="OnPhotoError(this);" class="avatar-img rounded-circle shadow" src="/assets/images/avatar/01.jpg" alt="Profile">
+
+                                        </div>
+                                        <div>
+                                            <a class="h6 mt-2 mt-sm-0" href="#">NIMRA </a>
+                                            <p class="small m-0">nimraareej852@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Links -->
+                                <li> <hr class="dropdown-divider"></li>
+                                <li></li>
+                                <li><a class="dropdown-item" href="/Global/account/DeleteUser"><i class="fa fa-trash fa-fw me-2"></i>Delete Account</a></li>
+                                <li><a class="dropdown-item" href="/Global/account/ChangePassword"><i class="fa fa-key fa-fw me-2"></i>Change Password</a></li>
+                                <li><a class="dropdown-item bg-danger-soft-hover" href="javascript:OnLogout();"><i class="fa fa-power-off me-2"></i>Logout</a></li>
+                                <li> <hr class="dropdown-divider"></li>
+
+                            </ul>
+                        </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+        <nav class="navbar navbar-expand-xl navbar-divider">
+            <div class="container px-0">
+                <!-- Main navbar START -->
+                <div class="navbar-collapse w-100 collapse" id="navbarCollapse2">
+                    <ul class="navbar-nav nav-active-line navbar-nav-scroll">
+                        <li class="nav-item"> <a class="nav-link home-active" href="https://pak.blsspainvisa.com/"><i class="fa fa-home"></i></a>	</li>
+
+
+                        
+                       
+                            <li class="nav-item"> <a class="nav-link new-app-active" href="/Global/appointment/newappointment">Book New Appointment</a>	</li>
+                            <li class="nav-item"> <a class="nav-link new-app-active" href="/Global/bls/VisaApplicationStatus">Application Status</a>	</li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle my-app-active" href="#" id="pageMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage Appointments</a>
+                                <ul class="dropdown-menu" aria-labelledby="pageMenu">
+
+                                    <li>
+                                        <a class="dropdown-item" href="/Global/appointmentdata/BLSCancelAppointment">
+                                            <i class="text-danger fa-regular fa-calendar-xmark me-2"></i>Cancel Appointment
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="/Global/appointmentdata/BLSReprintAppointmentLetter">
+                                            <i class="text-info fa-solid fa-print me-2"></i>Re-Print Appointment Letter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/Global/appointmentdata/MyAppointments">
+                                            <i class="text-info fa-solid fa-users me-2"></i>Manage Applicants
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle gen-info-active" href="#" id="pageMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Travel Insurance</a>
+                            <ul class="dropdown-menu" aria-labelledby="pageMenu">
+                 
+                                    <li class="nav-item">  <a class="nav-item"><a class="nav-link doorstep-active text-primary fw-bolder" href="https://bls.schengen.europ-assistance.com/es?ipc=blspakistan&utm_source=blspakistan&utm_medium=affiliates" target="_blank">Europe  Insurance </a></a></li>
+                                    
+                                    
+                                    <li class="nav-item">  <a class="nav-item"><a class="nav-link doorstep-active text-primary fw-bolder" href="https://bls.theunitedinsurance.com/ "target="_blank"> United Insurance</a></a></li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Main navbar END -->
+            </div>
+        </nav>
+        <!--Main menu link END -->
+    </header>
+    <!-- **************** MAIN CONTENT START **************** -->
+    <main>
+        
+<style>
+    .validation-summary ul {
+        list-style-type: none;
+    }
+</style>
+<div class="row">
+    <div class="col-12 row p-4 justify-content-center">
+        <div class="col-12 justify-content-center text-center pb-2">
+            <h5>Book New Appointment - Slot Selection</h5>
+        </div>
+
+    </div>
+    <div class="col-12">
+        
+<style id="DateCss">
+</style>
+<style>
+    .ddlSlot .k-dropdown {
+        width: 100%;
+    }
+    .font-small {
+        font-size: 11px !important;
+    }
+    .k-disabled, .k-state-disabled {
+        opacity: 1 !important;
+        cursor: not-allowed !important;
+    }
+    .k-state-disabled {
+        pointer-events:auto !important;
+    }
+    .jwwadwcdl{z-index:1;}.lkmpe{z-index:1;}.vrblqmf{z-index:1;}.sdoqftmtb{z-index:1;}.wpqeiu{z-index:1;}.dkdmkd{z-index:1;}.igqlwt{z-index:1;}.xqziai{z-index:1;}.xrpsjfs{z-index:1;}.qjhfmbbkh{display:none !important;z-index:1;}.iiydb{display:none !important;z-index:1;}.hyzyrwilu{display:none !important;z-index:1;}.touaxn{display:none !important;z-index:1;}.jzcpovvp{display:none !important;z-index:1;}.azadyno{display:none !important;z-index:1;}.chsqguavl{display:none !important;z-index:1;}.inqgdu{display:none !important;z-index:1;}.pezhsde{display:none !important;z-index:1;}.cvilrh{display:none !important;z-index:1;}.zyypuc{display:none !important;z-index:1;}.ebtdo{display:none !important;z-index:1;}.bytwfnj{display:none !important;z-index:1;}.onjeoh{display:none !important;z-index:1;}.zrjuz{display:none !important;z-index:1;}.orinz{display:none !important;z-index:1;}.ayopori{display:block !important;z-index:1;}.cmgdx{display:block !important;z-index:1;}.kkplgvzfj{display:block !important;z-index:1;}.jpjngl{display:block !important;z-index:1;}.faxjqz{display:block !important;z-index:1;}.qwyzxfdq{display:block !important;z-index:1;}.hdhsc{display:block !important;z-index:1;}.rmuoegzi{display:block !important;z-index:1;}.xqdacamtl{display:block !important;z-index:1;}.ukwaidfsm{display:block !important;z-index:1;}.jzsgm{display:block !important;z-index:1;}.lobunq{display:block !important;z-index:1;}.dbgcdoc{display:block !important;z-index:1;}.jwxhivlm{display:block !important;z-index:1;}.omglyyxns{display:block !important;}.yrqiews{display:block !important;}.bbcdkiacu{display:block !important;}.eozbqvyeh{display:block !important;}.ciepvnvr{display:block !important;}.pdlcnk{display:block !important;}.wkbylv{display:block !important;}.yiepx{display:block !important;}.ujzoa{display:block !important;}.twnixmiwf{display:block !important;}.slmqhzod{display:block !important;}.ggffgq{display:block !important;}.yqlfewbrr{display:block !important;}.cdlcyx{display:none !important;}.qtdgu{display:none !important;}.vwetpoqg{display:none !important;}.zoslaqvj{display:none !important;}.ztqlzyehh{display:none !important;}.qxurw{display:none !important;}.jiribcwc{display:none !important;}.dxknwnu{display:none !important;}.ihaekw{display:none !important;}.phgopt{display:none !important;}.wwuqie{display:none !important;}.twwna{display:none !important;}.auuknwnlj{display:none !important;}.mzllsuwin{display:none !important;}.yantgfqh{display:none !important;}.qpvia{display:block !important;}.gjlfav{display:block !important;}.opuef{display:block !important;}.znlwbv{display:block !important;}.sugzsmcb{display:block !important;}.rbyteucg{display:block !important;}.qikja{display:block !important;}.lojgqfsu{display:block !important;}.krmcmnn{display:block !important;}.byysglee{display:block !important;}.ftknfjt{display:block !important;}.nedwlkzh{display:block !important;}.jmiztpc{display:block !important;}.kcxfce{display:none !important;}.ezyjy{display:none !important;}.hsmzjk{display:none !important;}.qnzlucrwl{display:none !important;}.ehywyrs{display:none !important;}.byugla{display:none !important;}.ndfqmugsr{display:none !important;}.xcllames{display:none !important;}.ucajibu{display:none !important;}.hlckcyoh{display:none !important;}.mgzrxphdb{display:none !important;}.hxblpnx{display:none !important;}.vnuwps{display:none !important;}.ygohv{display:none !important;}.xebay{display:none !important;}.wwmsfhmm{display:none !important;}.gamxfrst{display:none !important;}.qrhnz{display:none !important;}
+</style>
+<div id="div-main" class="row pb-3 pl-5 pr-5">
+        <div class="d-none d-sm-block col-md-4">
+        </div>
+        <div class="shadow rounded-3 p-3 col-md-3 d-sm-12">
+            <div class="text-center col-12">
+                <a href="index.html">
+                </a>
+            </div>
+            <form method="post" action="/Global/Appointment/SlotSelection">
+                <div class="validation-summary text-danger mb-3 validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+                <div class="row">
+<div class="mb-3 nwjoa padoejo ijdktux tctra aeiggw xmsjwfpha ldnnmoix xrpsjfs zknkebqcz cgofzkv ohlgze lkmpe uxorpbod mhamhkwhx mtopzjgf wpqeiu svasouxc kszwhwsm xqziai yxxbpwo zsfbt zgdlv dqjbfum vrblqmf igqlwt abloyp kcxfce dkdmkd sdoqftmtb kyqdbm bspgb symmmpmc iyaoaixa rwpjfyiah xsreuo lvgpyivfr emhnau smaxoikb jwwadwcdl vqlqyg qlppaefom nkqzhgx asgumahrw mt-5">
+                        <label class="form-label" for="jwsapt">Appointment Date<span class="required">*</span></label>
+                        <input id="jwsapt" name="jwsapt" class="form-control" />
+                    </div><div class="mb-3 dqjbfum qlppaefom xqziai iyaoaixa sdoqftmtb rwpjfyiah kcxfce asgumahrw vrblqmf lkmpe aeiggw igqlwt jwwadwcdl xrpsjfs ldnnmoix dkdmkd wpqeiu mt-5">
+                        <label class="form-label" for="nvsfwllob">Appointment Date<span class="required">*</span></label>
+                        <input id="nvsfwllob" name="nvsfwllob" class="form-control" />
+                    </div><div class="mb-3 sdoqftmtb ldnnmoix vrblqmf dqjbfum aeiggw iyaoaixa jwwadwcdl rwpjfyiah asgumahrw xqziai kcxfce igqlwt xrpsjfs wpqeiu dkdmkd lkmpe mt-5">
+                        <label class="form-label" for="gaodabhg">Appointment Date<span class="required">*</span></label>
+                        <input id="gaodabhg" name="gaodabhg" class="form-control" />
+                    </div><div class="mb-3 aeiggw cgofzkv lkmpe ldnnmoix nkqzhgx rwpjfyiah asgumahrw kcxfce xrpsjfs smaxoikb jwwadwcdl igqlwt vrblqmf mtopzjgf iyaoaixa dkdmkd sdoqftmtb xqziai qlppaefom wpqeiu dqjbfum mt-5">
+                        <label class="form-label" for="zjckt">Appointment Date<span class="required">*</span></label>
+                        <input id="zjckt" name="zjckt" class="form-control" />
+                    </div><div class="mb-3 mhamhkwhx jwwadwcdl qpvia uxorpbod ijdktux igqlwt sdoqftmtb symmmpmc iyaoaixa xrpsjfs qlppaefom smaxoikb zgdlv padoejo rwpjfyiah vrblqmf kszwhwsm xsreuo lkmpe nwjoa kyqdbm lvgpyivfr ldnnmoix svasouxc tctra emhnau dqjbfum cgofzkv dkdmkd wpqeiu asgumahrw aeiggw yxxbpwo zsfbt zknkebqcz mtopzjgf xmsjwfpha nkqzhgx abloyp xqziai vqlqyg ohlgze mt-5">
+                        <label class="form-label" for="cvdyqhfl">Appointment Date<span class="required">*</span></label>
+                        <input id="cvdyqhfl" name="cvdyqhfl" class="form-control" />
+                    </div> <div class="mb-3 nwjoa xqziai aeiggw dkdmkd asgumahrw tctra igqlwt wpqeiu ijdktux cgofzkv xrpsjfs lkmpe ohlgze qlppaefom ldnnmoix smaxoikb kcxfce vrblqmf rwpjfyiah iyaoaixa dqjbfum sdoqftmtb emhnau jwwadwcdl nkqzhgx mtopzjgf mt-4">
+                        <label class="form-label" for="gmfjlucv">Appointment Slot<span class="required">*</span></label>
+                        <input id="gmfjlucv" name="gmfjlucv" class="form-control" />
+                    </div> <div class="mb-3 ldnnmoix vrblqmf lkmpe xrpsjfs xqziai qlppaefom iyaoaixa aeiggw dqjbfum asgumahrw qpvia smaxoikb jwwadwcdl igqlwt dkdmkd nkqzhgx sdoqftmtb mtopzjgf rwpjfyiah wpqeiu mt-4">
+                        <label class="form-label" for="ufius">Appointment Slot<span class="required">*</span></label>
+                        <input id="ufius" name="ufius" class="form-control" />
+                    </div> <div class="mb-3 igqlwt dkdmkd jwwadwcdl nkqzhgx xqziai vrblqmf mtopzjgf smaxoikb kcxfce asgumahrw ohlgze zsfbt symmmpmc rwpjfyiah ijdktux sdoqftmtb tctra lkmpe cgofzkv dqjbfum wpqeiu xrpsjfs aeiggw emhnau qlppaefom lvgpyivfr iyaoaixa ldnnmoix nwjoa yxxbpwo mt-4">
+                        <label class="form-label" for="kzgqr">Appointment Slot<span class="required">*</span></label>
+                        <input id="kzgqr" name="kzgqr" class="form-control" />
+                    </div> <div class="mb-3 wpqeiu asgumahrw xrpsjfs jwwadwcdl xqziai igqlwt lkmpe kcxfce iyaoaixa vrblqmf dkdmkd dqjbfum sdoqftmtb mt-4">
+                        <label class="form-label" for="dlupz">Appointment Slot<span class="required">*</span></label>
+                        <input id="dlupz" name="dlupz" class="form-control" />
+                    </div> <div class="mb-3 kyqdbm dqjbfum nwjoa emhnau lvgpyivfr wpqeiu qlppaefom zknkebqcz smaxoikb ijdktux xrpsjfs mhamhkwhx iyaoaixa rwpjfyiah mtopzjgf zsfbt tctra sdoqftmtb asgumahrw yxxbpwo nkqzhgx symmmpmc cgofzkv dkdmkd vqlqyg lkmpe padoejo aeiggw igqlwt jwwadwcdl ohlgze xqziai kcxfce ldnnmoix uxorpbod zgdlv vrblqmf mt-4">
+                        <label class="form-label" for="hvlmxqf">Appointment Slot<span class="required">*</span></label>
+                        <input id="hvlmxqf" name="hvlmxqf" class="form-control" />
+                    </div>
+<script>
+                                    $(document).ready(function () { 
+                                        
+$("#jwsapt").kendoDatePicker({
+                                        format: "{0:yyyy-MM-dd}",
+                                        change: jwsapt_ondatechange,
+                                        open: OnAppointmentDateOpen,
+                                        
+                                });LoadAppointmentDates('jwsapt');
+$("#nvsfwllob").kendoDatePicker({
+                                        format: "{0:yyyy-MM-dd}",
+                                        change: nvsfwllob_ondatechange,
+                                        open: OnAppointmentDateOpen,
+                                        
+                                });LoadAppointmentDates('nvsfwllob');
+$("#gaodabhg").kendoDatePicker({
+                                        format: "{0:yyyy-MM-dd}",
+                                        change: gaodabhg_ondatechange,
+                                        open: OnAppointmentDateOpen,
+                                        
+                                });LoadAppointmentDates('gaodabhg');
+$("#zjckt").kendoDatePicker({
+                                        format: "{0:yyyy-MM-dd}",
+                                        change: zjckt_ondatechange,
+                                        open: OnAppointmentDateOpen,
+                                        
+                                });LoadAppointmentDates('zjckt');
+$("#cvdyqhfl").kendoDatePicker({
+                                        format: "{0:yyyy-MM-dd}",
+                                        change: cvdyqhfl_ondatechange,
+                                        open: OnAppointmentDateOpen,
+                                        
+                                });LoadAppointmentDates('cvdyqhfl');
+ $("#gmfjlucv").kendoDropDownList({
+                                    optionLabel: "--Select--",
+                                    dataTextField: "Name",
+                                    dataValueField: "Id",
+                                    filter: "contains",
+                                    select: OnSlotSelect,
+                                    open: OnSlotOpen,
+                                    template: $("#Slottemplate").html(),
+                                    footerTemplate: ({ instance }) => $("#slot-footer-template").html(),
+                                    height: 500
+                                });
+ $("#ufius").kendoDropDownList({
+                                    optionLabel: "--Select--",
+                                    dataTextField: "Name",
+                                    dataValueField: "Id",
+                                    filter: "contains",
+                                    select: OnSlotSelect,
+                                    open: OnSlotOpen,
+                                    template: $("#Slottemplate").html(),
+                                    footerTemplate: ({ instance }) => $("#slot-footer-template").html(),
+                                    height: 500
+                                });
+ $("#kzgqr").kendoDropDownList({
+                                    optionLabel: "--Select--",
+                                    dataTextField: "Name",
+                                    dataValueField: "Id",
+                                    filter: "contains",
+                                    select: OnSlotSelect,
+                                    open: OnSlotOpen,
+                                    template: $("#Slottemplate").html(),
+                                    footerTemplate: ({ instance }) => $("#slot-footer-template").html(),
+                                    height: 500
+                                });
+ $("#dlupz").kendoDropDownList({
+                                    optionLabel: "--Select--",
+                                    dataTextField: "Name",
+                                    dataValueField: "Id",
+                                    filter: "contains",
+                                    select: OnSlotSelect,
+                                    open: OnSlotOpen,
+                                    template: $("#Slottemplate").html(),
+                                    footerTemplate: ({ instance }) => $("#slot-footer-template").html(),
+                                    height: 500
+                                });
+ $("#hvlmxqf").kendoDropDownList({
+                                    optionLabel: "--Select--",
+                                    dataTextField: "Name",
+                                    dataValueField: "Id",
+                                    filter: "contains",
+                                    select: OnSlotSelect,
+                                    open: OnSlotOpen,
+                                    template: $("#Slottemplate").html(),
+                                    footerTemplate: ({ instance }) => $("#slot-footer-template").html(),
+                                    height: 500
+                                });
+                                         
+                                         
+                                    });
+                                    
+ function jwsapt_ondatechange(e) {
+                                        OnAppointmentdateChange('gmfjlucv,ufius,kzgqr,dlupz,hvlmxqf','cvdyqhfl');
+                                   }
+ function nvsfwllob_ondatechange(e) {
+                                        OnAppointmentdateChange('gmfjlucv,ufius,kzgqr,dlupz,hvlmxqf','cvdyqhfl');
+                                   }
+ function gaodabhg_ondatechange(e) {
+                                        OnAppointmentdateChange('gmfjlucv,ufius,kzgqr,dlupz,hvlmxqf','cvdyqhfl');
+                                   }
+ function zjckt_ondatechange(e) {
+                                        OnAppointmentdateChange('gmfjlucv,ufius,kzgqr,dlupz,hvlmxqf','cvdyqhfl');
+                                   }
+ function cvdyqhfl_ondatechange(e) {
+                                        OnAppointmentdateChange('gmfjlucv,ufius,kzgqr,dlupz,hvlmxqf','cvdyqhfl');
+                                   }
+                               </script>                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary" id="btnSubmit" type="submit" onclick="return OnSubmitSlotSelection();">Submit</button>
+                </div>
+                <div class="text-right pt-3">
+                    (<span class="required">*</span>)&nbsp;<span>Mandatory Field</span>
+                </div>
+                
+                <input id="Data" name="Data" type="hidden" value="Yp1vk7iGPzGllWSGZryJPafqX5dDEWj4lZWSKeIFHV8/4Oj8NZbkTDWirncPfj22MR0eUAJPa1WzNUcBjSxXO&#x2B;&#x2B;nA8cH2/nTp&#x2B;rxXEje/jkLlCTcmsLMoOXIxRCaEWddHAWQGbmKz93RXD5S4etGr2e9Hzj18JkBaL4idY&#x2B;y8L8BToO5TbXFoHssqqxxLBvrOQqNmiooL9aFmw8rY0sjpbFKADGV6/I8hPr3BmoiQlYnoU2ZC/VZSVuB/0jRG0Sm&#x2B;wVDj&#x2B;8LFzolACvXSP8IBkmzNjqrwCtqms&#x2B;SjXWwBnZF/78W1Cd76Ln&#x2B;Dm5r6Qff" />
+                <input id="ResponseData" name="ResponseData" type="hidden" value="{&quot;uehfhca&quot;:&quot;&quot;,&quot;spmrxn&quot;:&quot;4163&quot;,&quot;zopyiz&quot;:&quot;&quot;,&quot;ectftnkma&quot;:&quot;&quot;,&quot;ufgjvbk&quot;:&quot;&quot;,&quot;qwgzvqp&quot;:&quot;&quot;,&quot;dyrdhjmwg&quot;:&quot;&quot;,&quot;ptxrxegvz&quot;:&quot;&quot;,&quot;pnvqvs&quot;:&quot;7734&quot;,&quot;xofxw&quot;:&quot;&quot;,&quot;zuhcub&quot;:&quot;&quot;,&quot;blednl&quot;:&quot;&quot;,&quot;ecgccuhu&quot;:&quot;5253&quot;,&quot;cjrvmxeg&quot;:&quot;&quot;,&quot;zlvwylsf&quot;:&quot;&quot;,&quot;xhevkxofj&quot;:&quot;&quot;,&quot;poayclit&quot;:&quot;2573&quot;,&quot;zwgpmdw&quot;:&quot;&quot;,&quot;qdrgdj&quot;:&quot;&quot;,&quot;yyxns&quot;:&quot;&quot;,&quot;kmwkal&quot;:&quot;&quot;,&quot;skvottgvu&quot;:&quot;&quot;,&quot;nptwjte&quot;:&quot;&quot;,&quot;sursidmk&quot;:&quot;&quot;,&quot;lzevikrfg&quot;:&quot;&quot;}" />
+                <input id="AppointmentFor" name="AppointmentFor" type="hidden" value="Individual" />
+                <input data-val="true" data-val-required="The SearchDate field is required." id="SearchDate" name="SearchDate" type="hidden" value="False" />
+            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8HR2AoMI3LpApkZfZPiNaiY6GPbc-sXCqL7JoZrKtC-zza-1DaFmArPnEShyHDJO5h8VTCPkG3p6M23rmUqrQwrJlWziep6UfJVTPwgNfwBD5IS8RJs8Axcva3ddpP3eXm-67eFLNsxVSGv1xZ2YvoLs_7rGfYQ6vSjrH3zBJ79w9EDHAcmH8w7H4LjTizbRUA" /></form>
+        </div>
+        <div class="d-none d-sm-block col-md-5">
+        </div>
+</div>
+<div class="modal fade" id="commonModal" tabindex="-1" role="dialog" aria-labelledby="commonModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" id="commonModalLabel">  <span id="commonModalHeader" style="font-weight:600;" class="text-info"></span></h6>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+
+            </div>
+            <div class="modal-body scam-body" style="color:black;font-size:medium">
+                <span id="commonModalBody">
+
+                </span>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" type="button" data-bs-dismiss="modal">Ok</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script id="Slottemplate" type="text/x-kendo-template">
+
+                            #if(data.Count<eval(data.Code)){#
+                            <div class='slot-item bg-danger' style='border-radius: 8px;padding: 4px 18px 4px 18px;cursor:not-allowed;color:white;'>
+    #: data.Name #
+                            </div>
+    #}else{#
+                            <div class='slot-item bg-success' style='border-radius: 8px;padding: 4px 18px 4px 18px;cursor:pointer;color:white;'>
+    #: data.Name #
+                            </div>
+    #}#
+
+</script>
+<script id="date-footer-template" type="text/x-kendo-template">
+    <div id="date-legend">
+    <div>
+           <i class="fa fa-square text-success"></i><span class="mx-2 font-small">Appointment Available</span>
+           <i class="fa fa-square text-danger"></i><span class="mx-2 font-small">No Slot Available</span>
+      </div>
+     <div>
+           <i class="fa fa-square text-secondary"></i><span class="mx-2 font-small">Weekend</span>
+           <i class="fa fa-square text-warning"></i><span class="mx-2 font-small">Embassy/Public Holiday</span>
+    </div>
+    </div>
+
+</script>
+<script id="slot-footer-template" type="text/x-kendo-template">
+    <div id="slot-legend">
+    <div>
+           <i class="fa fa-square text-success"></i><span class="mx-2 pb-2 font-small">Slot Available</span>
+      </div>
+     <div>
+              <i class="fa fa-square text-danger"></i><span class="mx-2 font-small">Slot Booked</span>
+    </div>
+    </div>
+</script>
+
+<script>
+    var slotDataSource = null;
+    var availDates = {"min":"2025-06-11T00:00:00","max":"2025-07-01T00:00:00","ad":[{"Date":"2025-06-11T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-11","DateValue":"2025/5/11","DateTextLong":"Wednesday, June 11, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-12T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-12","DateValue":"2025/5/12","DateTextLong":"Thursday, June 12, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-13T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-13","DateValue":"2025/5/13","DateTextLong":"Friday, June 13, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-14T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-14","DateValue":"2025/5/14","DateTextLong":"Saturday, June 14, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-15T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":false,"DateText":"2025-06-15","DateValue":"2025/5/15","DateTextLong":"Sunday, June 15, 2025","Count":0,"AllCount":0,"AppointmentDateType":3,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-16T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-16","DateValue":"2025/5/16","DateTextLong":"Monday, June 16, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-17T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-17","DateValue":"2025/5/17","DateTextLong":"Tuesday, June 17, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-18T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-18","DateValue":"2025/5/18","DateTextLong":"Wednesday, June 18, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-19T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-19","DateValue":"2025/5/19","DateTextLong":"Thursday, June 19, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-20T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-20","DateValue":"2025/5/20","DateTextLong":"Friday, June 20, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-21T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-21","DateValue":"2025/5/21","DateTextLong":"Saturday, June 21, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-22T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":false,"DateText":"2025-06-22","DateValue":"2025/5/22","DateTextLong":"Sunday, June 22, 2025","Count":0,"AllCount":0,"AppointmentDateType":3,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-23T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-23","DateValue":"2025/5/23","DateTextLong":"Monday, June 23, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-24T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-24","DateValue":"2025/5/24","DateTextLong":"Tuesday, June 24, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-25T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-25","DateValue":"2025/5/25","DateTextLong":"Wednesday, June 25, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-26T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-26","DateValue":"2025/5/26","DateTextLong":"Thursday, June 26, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-27T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-27","DateValue":"2025/5/27","DateTextLong":"Friday, June 27, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-28T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-28","DateValue":"2025/5/28","DateTextLong":"Saturday, June 28, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-29T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":false,"DateText":"2025-06-29","DateValue":"2025/5/29","DateTextLong":"Sunday, June 29, 2025","Count":0,"AllCount":0,"AppointmentDateType":3,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-06-30T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-06-30","DateValue":"2025/5/30","DateTextLong":"Monday, June 30, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null},{"Date":"2025-07-01T00:00:00","Slot":null,"Start":"00:00:00","End":"00:00:00","SingleSlotAvailable":true,"DateText":"2025-07-01","DateValue":"2025/6/1","DateTextLong":"Tuesday, July 01, 2025","Count":0,"AllCount":0,"AppointmentDateType":0,"CategoryIds":null,"NationalityIds":null}],"dd":["2025-06-15","2025-06-22","2025-06-29"]};
+    function OnSubmitSlotSelection() {
+        ShowLoader();
+        $("#SearchDate").val('false');
+        var submittedData={jwsapt : $("#jwsapt").val(),
+nvsfwllob : $("#nvsfwllob").val(),
+gaodabhg : $("#gaodabhg").val(),
+zjckt : $("#zjckt").val(),
+cvdyqhfl : $("#cvdyqhfl").val(),
+gmfjlucv : $("#gmfjlucv").val(),
+ufius : $("#ufius").val(),
+kzgqr : $("#kzgqr").val(),
+dlupz : $("#dlupz").val(),
+hvlmxqf : $("#hvlmxqf").val(),
+};;
+        $("#ResponseData").val(JSON.stringify(submittedData));
+        return true;
+    }
+    function onDateSearch() {
+        ShowLoader();
+        $("#SearchDate").val('true');
+        var submittedData={jwsapt : $("#jwsapt").val(),
+nvsfwllob : $("#nvsfwllob").val(),
+gaodabhg : $("#gaodabhg").val(),
+zjckt : $("#zjckt").val(),
+cvdyqhfl : $("#cvdyqhfl").val(),
+gmfjlucv : $("#gmfjlucv").val(),
+ufius : $("#ufius").val(),
+kzgqr : $("#kzgqr").val(),
+dlupz : $("#dlupz").val(),
+hvlmxqf : $("#hvlmxqf").val(),
+};;
+        $("#ResponseData").val(JSON.stringify(submittedData));
+        return true;
+    }
+    $(document).ready(function () {
+        // $("#AppointmentCategoryId").kendoDropDownList({
+        //     optionLabel: "--Select--",
+        //     dataTextField: "Name",
+        //     dataValueField: "Id",
+        //     filter: "contains",
+        //     autoBind: true,
+        //     // change: LoadAppointmentDates,
+        //     value: "5c2e8e01-796d-4347-95ae-0c95a9177b26",
+        //     dataSource: AppointmentCategoryIdData
+        // });
+        // $("#AppointmentDate").kendoDatePicker({
+        //     format: "{0:yyyy-MM-dd}",
+        //     change: OnAppointmentdateChange,
+        //     open: OnAppointmentDateOpen,
+        // });
+        $("#AppointmentSlot").kendoDropDownList({
+            optionLabel: "--Select--",
+            dataTextField: "Name",
+            dataValueField: "Id",
+            filter: "contains",
+            select: OnSlotSelect,
+            open: OnSlotOpen,
+            template: $("#Slottemplate").html(),
+            footerTemplate: ({ instance }) => $("#slot-footer-template").html(),
+            height: 500
+        });
+
+       
+    });
+    function OnSlotSelect(e) {
+        if (e.dataItem.Count <= 0) {
+            e.preventDefault();
+        }
+    }
+    function OnSlotChange(e) {
+        var dataItem = e.sender.dataItem();
+        if (dataItem.Count <= 0) {
+            e.preventDefault();
+        }
+    }
+    function OnSlotOpen() {
+        this.setDataSource(slotDataSource);
+        var id = this.element.attr("id");
+        var values = values + $("#"+id).data("kendoDropDownList").value();
+        var items = this.items();
+        for (let item of items) {
+            var dataItem = this.dataItem($(item));
+            if (dataItem.Count > 0) {
+                var reg = new RegExp(dataItem.Id, 'g');
+                var count = (values.match(reg) || []).length;
+                if (dataItem.Count <= count) {
+                    dataItem.Count = 0;
+                    $(item).find(".slot-item").css("background-color", '#ff6666');
+                    $(item).find(".slot-item").css("cursor", 'not-allowed');
+                    $(item).addClass("k-disabled");
+                    $(item).find(".slot-item").addClass("k-disabled");
+                }
+            }
+        }
+    }
+    function OnAppointmentdateChange(slots,dt) {
+        var ad = $("#"+dt).data("kendoDatePicker").value();
+        var slot = $("#AppointmentSlot").data("kendoDropDownList");
+        var slotArray = slots.split(",");
+        if (ad === null || ad === '' || ad === undefined) {
+            for (let slot of slotArray) {
+                slot.value("");
+                slot.setDataSource([]);
+                slot.value("");
+                slot.enable(false);
+            }
+            return false;
+        }
+        var appointmentDate = kendo.toString(ad, 'yyyy-MM-dd');
+        ShowLoader();
+        $.ajax({
+            type: "POST",
+            url: "/Global/appointment/GetAvailableSlotsByDate?data=Yp1vk7iGPzGllWSGZryJPafqX5dDEWj4lZWSKeIFHV8%2f4Oj8NZbkTDWirncPfj22MR0eUAJPa1WzNUcBjSxXO%2b%2bnA8cH2%2fnTp%2brxXEje%2fjkLlCTcmsLMoOXIxRCaEWddHAWQGbmKz93RXD5S4etGr2e9Hzj18JkBaL4idY%2by8L8BToO5TbXFoHssqqxxLBvrOQqNmiooL9aFmw8rY0sjpbFKADGV6%2fI8hPr3BmoiQlYnoU2ZC%2fVZSVuB%2f0jRG0Sm%2bwVDj%2b8LFzolACvXSP8IBkmzNjqrwCtqms%2bSjXWwBnZF%2f78W1Cd76Ln%2bDm5r6Qff&appointmentDate=" + appointmentDate,
+            dataType: "json",
+            success: function (data) {
+                if (data.success) {
+                    HideLoader();
+                     slotDataSource = data.data;
+                     for (let slot of slotArray) {
+                         slot.enable(true);
+                     }
+                }
+                else if (data.ru != undefined || data.ru != null || data.ru != '') {
+                    window.location.href = data.ru;
+                }
+                else if (data.err != undefined || data.err != null || data.err != '') {
+                    alert(data.err);
+                }
+            }
+        });
+    }
+
+    function OnAppointmentDateOpen(e) {
+        var t = kendo.template($("#date-footer-template").html());
+        var dp = this;
+        setTimeout(function () {
+            var div = dp.dateView.popup.wrapper.find(".k-footer").find("#date-legend");
+            div.remove();
+            dp.dateView.popup.wrapper.find(".k-footer").append(t({ text: "testing" }));
+        });
+    }
+
+    function LoadAppointmentDates(d) {
+        var appDate = $("#" + d).data("kendoDatePicker");
+        appDate.value("");
+        // var slot = $("#AppointmentSlot").data("kendoDropDownList");
+        // slot.value("");
+        // slot.setDataSource([]);
+        // slot.enable(false);
+         var data = availDates;
+            allowedDates = data.ad;
+            var styl = $("#DateCss");
+            if (allowedDates !== null && allowedDates.length > 0) {
+                const available = allowedDates.filter(x => x.AppointmentDateType === 0);
+                if (available === null || available.length < 1) {
+                    appDate.enable(false);
+                    ShowCommonModal('No Appointments Available', 'Currently, no slots are available for the selected category. Slots are released basis instructions from Client Government. Kindly try again after few days. Thank you for your patience');
+                    return false;
+                }
+                var availableStr = '';
+                $.each(available, function (index, value) {
+                    availableStr += '#' + d + '_dateview .k-calendar a[data-value="' + value.DateValue + '"],';
+                });
+                if (availableStr.length > 0) {
+
+                    availableStr = availableStr.slice(0, -1) + '{background-color: var(--bs-success) !important;margin:1px !important;opacity: 1 !important;color:#fff !important;height: 2.2em;width: 2.2em;}';
+                }
+                // else if (eval(applicantCount) > 1) {
+
+                //     var av = allowedDates.filter(x => x.SingleSlotAvailable === true);
+                //     if (av.length > 0) {
+                //         $('#familySingleSlotModal').modal('show');
+                //     }
+                // }
+                const slotFull = allowedDates.filter(x => x.AppointmentDateType === 1);
+                var slotFullStr = '';
+                $.each(slotFull, function (index, value) {
+                    slotFullStr += '#' + d + '_dateview .k-calendar a[data-value="' + value.DateValue + '"],';
+                });
+                if (slotFullStr.length > 0) {
+                    slotFullStr = slotFullStr.slice(0, -1) + '{background-color: var(--bs-danger) !important;margin:1px !important;opacity: 1 !important;color:#fff !important;height: 2.2em;width: 2.2em;cursor:not-allowed !important;}';
+                }
+                const holiday = allowedDates.filter(x => x.AppointmentDateType === 2);
+                var holidayStr = '';
+                $.each(holiday, function (index, value) {
+                    holidayStr += '#' + d + '_dateview .k-calendar a[data-value="' + value.DateValue + '"],';
+                });
+                if (holidayStr.length > 0) {
+                    holidayStr = holidayStr.slice(0, -1) + '{background-color: #FFBF00 !important;margin:1px !important;opacity: 1 !important;color:#fff !important;height: 2.2em;width: 2.2em;cursor:not-allowed !important;}';
+                }
+                const weekend = allowedDates.filter(x => x.AppointmentDateType === 3);
+                var weekendStr = '';
+                $.each(weekend, function (index, value) {
+                    weekendStr += '#' + d + '_dateview .k-calendar a[data-value="' + value.DateValue + '"],';
+                });
+                if (weekendStr.length > 0) {
+                    weekendStr = weekendStr.slice(0, -1) + '{background-color: var(--bs-gray) !important;margin:1px !important;opacity: 1 !important;color:#fff !important;height: 2.2em;width: 2.2em;cursor:not-allowed !important;}';
+                }
+                styl.html(styl.html()+availableStr + slotFullStr + holidayStr + weekendStr);
+
+                appDate.enable(true);
+                var ddArray = null;
+                if (data.dd !== null && data.dd !== '' && data.dd !== undefined) {
+                    ddArray = data.dd.map(str => str);
+                }
+                appDate.setOptions({
+                    disableDates: function (date) {
+                        if (date) {
+                            for (var i = 0; i < ddArray.length; i++) {
+                                var dt = ddArray[i].split('-');
+                                var yr = eval(dt[0]);
+                                var mo = eval(dt[1]);
+                                var da = eval(dt[2]);
+                                var yr1 = eval(date.getFullYear());
+                                var mo1 = eval(date.getMonth() + 1);
+                                var da1 = eval(date.getDate());
+                                if (da == da1 && mo == mo1 && yr == yr1) {
+                                    return true;
+                                }
+                            }
+                            return false;
+                        } else {
+                            return false;
+                        }
+                    },
+                    min: data.min,
+                    max: data.max,
+                });
+            } else {
+                appDate.enable(false);
+                //var cat = $("#AppointmentCategoryId").val();
+               // if (cat != null && cat != undefined && cat != '') {
+                    ShowCommonModal('No Appointments Available', 'Currently, no slots are available for the selected category. Slots are released basis instructions from Client Government. Kindly try again after few days. Thank you for your patience')
+                //}
+            }
+    }
+    function ShowCommonModal(header, body) {
+
+        $('#commonModalHeader').html(header);
+        $('#commonModalBody').html(body);
+        $('#commonModal').modal('show');
+    }
+</script>
+
+    </div>
+</div>
+
+
+    </main>
+    <!-- **************** MAIN CONTENT END **************** -->
+    <!-- =======================
+    Footer START -->
+    <footer class="bg-dark pt-5">
+        <div class="container">
+            <!-- Row START -->
+            <div class="row g-4">
+
+                <!-- Widget 1 START -->
+                <div class="col-lg-3">
+                    <!-- logo -->
+                    
+
+                </div>
+                <!-- Widget 1 END -->
+                <!-- Widget 2 START -->
+                <div class="col-lg-8 ms-auto">
+                    <div class="row g-4">
+                        <!-- Link block -->
+
+                        <!-- Link block -->
+
+                    </div>
+                </div>
+                <!-- Widget 2 END -->
+
+            </div><!-- Row END -->
+
+            <div class="row g-4 justify-content-between mt-0 mt-md-2">
+
+                <!-- Payment card -->
+               
+
+                <!-- Social media icon -->
+            </div>
+            <!-- Divider -->
+            <hr class="mt-4 mb-0">
+
+            <!-- Bottom footer -->
+            <div class="row">
+                <div class="container">
+                    <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-lg-start">
+                        <!-- copyright text -->
+                        <div class="text-muted text-primary-hover"> 2025.</div>
+                        <div class="nav mt-2 mt-lg-0">
+                            <small class="list-inline-item me-0">V&nbsp;4.9</small>
+                        </div>
+                        <!-- copyright links-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- =======================
+    Footer END -->
+    <!-- Back to top -->
+    <div class="back-top back-top-show"></div>
+    <!-- Bootstrap JS -->
+
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="scamModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="scamModalLabel">  <span style="font-weight:600;color:black">Ready to Leave?</span></h6>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+
+                </div>
+                <div class="modal-body scam-body" style="color:black;font-size:medium">
+                    <span>
+                        Select &quot;Logout&quot; below if you are ready to end your current session.
+                    </span>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancel</button>
+                    <button class="btn btn-danger" type="button" onclick="OnLogoutSubmit();">Logout</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js?v=Bh8LHqeebiyiT0YD5V0-kJ90cboLJ5zbbepAVUEGxqI"></script>
+
+    <!-- Vendors -->
+    <script src="/assets/vendor/tiny-slider/tiny-slider.js?v=TUoRPxlDCbgCqz7qhneDUfttB5a74WlyYrm3FOjFZnU"></script>
+    <script src="/assets/vendor/purecounterjs/dist/purecounter_vanilla.js?v=faMnyiv1xv8mqVhNEZAf8nONW6FTf7T0o40mEeleNsQ"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.js?v=r0f52UVK7WXq6iGxjyhjV-Y2WjDtpwawIrQaoBtwqE4"></script>
+    <script src="/assets/vendor/flatpickr/js/flatpickr.min.js?v=AkQap91tDcS4YyQaZY2VV34UhSCxu2bDEIgXXXuf5Hg"></script>
+    <script src="/assets/vendor/choices/js/choices.min.js?v=GGLVnYaVIFDbccxWOhWJiXbdGgmWv7nDSer8VyCQSBk"></script>
+    <script src="/assets/vendor/jarallax/jarallax.min.js?v=051mEhTXV1pINFHbbB6peqpAeo2lEkRMtXVe59eo8Xo"></script>
+    <script src="/assets/vendor/jarallax/jarallax-video.min.js?v=hfysllUmwJ3on3niY5cibYd5iwOz1MZ-A5aKYxeD0fw"></script>
+
+    <!-- ThemeFunctions -->
+    <script src="/assets/js/functions.js?v=TbMKeJx-U07R1sXdRBqHpmGBu1Oh1AfWjFjDMY8fuOA"></script>
+    <script src="/js/site.js?v=Zae_YToV_3sMcp-zmbX7TRawrPPJxNMdaNWsqVqkUtA"></script>
+
+    <script>
+        var iframeOpenUrl = "";
+        var globalPopups = GetStack();
+        var globalCallBack = null;
+        var globalWindowSender = null;
+        function OnLanguageChange(lng) {
+
+            if (lng === 'en-US') {
+                return false;
+            }
+            ShowLoader();
+            $.ajax({
+                type: "POST",
+                url: "/Global/account/ChangeLanguage?hdnLang=" +lng,
+                success: function (response) {
+                    HideLoader();
+                    if (response != "" && response != null && response.success === true) {
+                        window.location.href = window.location.href;
+                    }
+                },
+                error: function (response) {
+                    HideLoader();
+                    alert("error");
+                },
+            });
+              return false;
+        }
+        function OnLogout() {
+            $('#logoutModal').modal('show');
+        }
+        function OnLogoutSubmit() {
+            ShowLoader();
+            $.ajax({
+                type: "POST",
+                url: "/Global/account/logout",
+                success: function (response) {
+                    HideLoader();
+                    if (response != "" && response != null && response.success === true) {
+                        window.location.href = "/";
+                    }
+                },
+                error: function (response) {
+                    HideLoader();
+                    alert(response.error);
+                },
+            });
+            return false;
+        }
+    </script>
+    
+    <script src="/assets/vendor/kendo/js/kendo.all.min.js?v=PO_iEpMMumS6ezVxpHt1IpXsBBwz5RAz-jXCrshdYLM"></script>
+
+</body>
+</html>
